@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Raka</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f4f8;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .section h2 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    blockquote {
+      font-style: italic;
+      background: #ecf0f1;
+      padding: 1rem;
+      border-left: 5px solid #3498db;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form input[type="submit"] {
+      background: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form input[type="submit"]:hover {
+      background: #2980b9;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #2c3e50;
+      color: white;
+    }
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+    .about-photo {
+      flex: 0 0 150px;
+    }
+    .about-photo img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Halo, saya Raka!</h1>
+    <p>Selamat datang di website portofolio saya 👋</p>
+  </header>
+  <main>
+    <section class="section">
+      <h2>Tentang Saya</h2>
+      <div class="about-container">
+        <div class="about-photo">
+          <img src="foto.JPG" alt="Foto">
+        </div>
+        <div class="about-text">
+          <p>Halo, saya Raka, siswa kelas XI jurusan Informatika yang menyukai pemrograman sejak SMP. Saya sangat tertarik pada pengembangan game karena saya percaya game bisa menjadi media edukatif dan hiburan yang bermanfaat. Saat ini, saya sedang mengeksplorasi Python dan Pygame sebagai langkah awal saya menjadi developer profesional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Proyek Saya</h2>
+      <ul>
+        <li><strong>Mini Game "Ular Tangga Edukasi"</strong> – Game sederhana yang saya buat dengan Python dan Pygame. Game ini berisi pertanyaan kuis yang muncul setiap pemain naik tangga.</li>
+        <li><strong>Game Tebak Angka (CLI)</strong> – Sebuah game kecil berbasis terminal yang menantang pemain menebak angka dengan jumlah nyawa terbatas.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Kutipan Favorit</h2>
+      <blockquote>
+        "Semua game besar bermula dari satu baris kode kecil."
+      </blockquote>
+    </section>
+
+    <section class="section">
+      <h2>Sambutan</h2>
+      <p>Hai, selamat datang di website portofolio saya! Di sini kamu bisa melihat proyek-proyek yang saya kerjakan dan perjalanan saya belajar menjadi programmer.</p>
+    </section>
+
+    <section class="section">
+      <h2>Kontak Saya</h2>
+      <form id="contactForm">
+        <label>Nama:</label>
+        <input type="text" name="nama" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Pesan:</label>
+        <textarea name="pesan" rows="5" required></textarea>
+
+        <input type="submit" value="Kirim Pesan">
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Raka. Website Portofolio dibuat dengan semangat belajar.
+  </footer>
+
+  <script>
+    // Simulasi form submit (tidak benar-benar mengirim data)
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Terima kasih! Pesan kamu sudah terkirim.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
